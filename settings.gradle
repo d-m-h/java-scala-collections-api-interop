@@ -1,0 +1,6 @@
+rootProject.name = 'gradle-toy'
+
+include 'app'
+include 'core'
+include 'thing_2.12'
+include 'thing_2.13'

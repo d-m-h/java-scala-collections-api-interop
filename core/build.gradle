@@ -1,0 +1,29 @@
+plugins {
+    id 'java-library'
+}
+
+group = 'com.github.dhawes'
+version = '1.0-SNAPSHOT'
+
+ext {
+    scalaVersion = project.findProperty('scalaVersion')
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+configurations {
+    scala212
+    scala213
+}
+
+test {
+    useJUnitPlatform()
+}
